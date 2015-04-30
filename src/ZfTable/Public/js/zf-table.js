@@ -41,8 +41,10 @@
         }
         
         function init($obj) {
-            options.onInit();
-            ajax($obj);
+            var rta = options.onInit();
+            if (rta !== false){
+                ajax($obj);
+            }
         }
         function ajax($obj) {
             $obj.prepend('<div class="processing" style=""></div>');
