@@ -45,10 +45,10 @@
             if (rta !== false){
                 ajax($obj);
             } else {
-				initialized = true;
-				initNavigation($obj);
+		initialized = true;
+		initNavigation($obj);
                 $obj.find('.processing').hide();
-			}
+	    }
         }
         function ajax($obj) {
             $obj.prepend('<div class="processing" style=""></div>');
